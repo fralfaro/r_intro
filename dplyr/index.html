@@ -12,14 +12,14 @@
         <meta name="author" content="Francisco Alfaro">
       
       
-        <link rel="canonical" href="https://github.com/fralfaro/r_intro/intro_progra/">
+        <link rel="canonical" href="https://github.com/fralfaro/r_intro/dplyr/">
       
       <link rel="icon" href="../images/logo_r.bmp">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Programación - Home</title>
+        <title>Dplyr - Home</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#programacion" class="md-skip">
+        <a href="#dplyr" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Programación
+              Dplyr
             
           </span>
         </div>
@@ -247,6 +247,36 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../intro/" class="md-nav__link">
+        Introducción
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic/" class="md-nav__link">
+        Nomenclatura
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -259,12 +289,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Programación
+          Dplyr
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Programación
+        Dplyr
       </a>
       
         
@@ -283,35 +313,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#algoritmos" class="md-nav__link">
-    Algoritmos
+  <a href="#introduccion" class="md-nav__link">
+    Introducción
   </a>
-  
-    <nav class="md-nav" aria-label="Algoritmos">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#componentes-de-un-algoritmo" class="md-nav__link">
-    Componentes de un algoritmo
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#como-describir-un-algoritmo" class="md-nav__link">
-    Cómo describir un algoritmo
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#referencias" class="md-nav__link">
-    Referencias
+  <a href="#ejemplo" class="md-nav__link">
+    Ejemplo
   </a>
   
 </li>
@@ -332,23 +342,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../introduccion/" class="md-nav__link">
-        Motivación
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../basico/" class="md-nav__link">
-        Nomenclatura
+      <a href="../ggplot2/" class="md-nav__link">
+        Ggplot2
       </a>
     </li>
   
@@ -381,35 +376,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#algoritmos" class="md-nav__link">
-    Algoritmos
+  <a href="#introduccion" class="md-nav__link">
+    Introducción
   </a>
-  
-    <nav class="md-nav" aria-label="Algoritmos">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#componentes-de-un-algoritmo" class="md-nav__link">
-    Componentes de un algoritmo
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#como-describir-un-algoritmo" class="md-nav__link">
-    Cómo describir un algoritmo
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#referencias" class="md-nav__link">
-    Referencias
+  <a href="#ejemplo" class="md-nav__link">
+    Ejemplo
   </a>
   
 </li>
@@ -1464,76 +1439,23 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="programacion">Programaci&#243;n<a class="anchor-link" href="#programacion">&#182;</a></h1><blockquote><p>Se suele decir que una persona no entiende algo de verdad hasta que puede explicárselo a otro. En realidad, no lo entiende de verdad hasta que puede explicárselo a un computador`. — <strong>Donald Knuth</strong>.</p>
-</blockquote>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Si tuvieramos que resumir el propósito de la programación en una frase, ésta debería ser:</p>
-<blockquote><p>que el computador haga el trabajo por nosotros.</p>
-</blockquote>
-<p>Los computadores son buenos para hacer tareas rutinarias. Idealmente, cualquier problema tedioso y repetitivo debería ser resuelto por un computador, y los seres humanos sólo deberíamos encargarnos de los problemas realmente interesantes: los que requieren creatividad, pensamiento crítico y subjetividad.</p>
-<p>La <strong>programación</strong> es el proceso de transformar un método para resolver problemas en uno que pueda ser entendido por el computador.</p>
-<h2 id="algoritmos">Algoritmos<a class="anchor-link" href="#algoritmos">&#182;</a></h2><blockquote><p>La informática se trata de computadores tanto como la astronomía se trata de telescopios. — <strong>Edsger Dijkstra</strong>.</p>
-</blockquote>
-<p>Al diseñar un programa, el desafío principal es crear y describir un procedimiento que esté completamente bien definido, que no tenga ambigüedades, y que efectivamente resuelva el problema.</p>
-<p>Así es como la programación no es tanto sobre computadores, sino sobre resolver problemas de manera estructurada. El objeto de estudio de la programación no son los programas, sino los algoritmos.</p>
-<p>Un <strong>algoritmo</strong> es un procedimiento bien definido para resolver un problema. Todo el mundo conoce y utiliza algoritmos a diario, incluso sin darse cuenta:</p>
-<p><strong>a) Una receta</strong></p>
-<p>Una receta de cocina es un algoritmo; si bien podríamos cuestionar que algunos pasos son ambiguos (¿cuánto es «una pizca de sal»? ¿qué significa «agregar a gusto»?), en general las instrucciones están lo suficientemente bien definidas para que uno las pueda seguir sin problemas.</p>
-<p>La entrada de una receta son los ingredientes y algunos datos como: ¿para cuántas personas se cocinará? El proceso es la serie de pasos para manipular los ingredientes. La salida es el plato terminado.</p>
-<p>En principio, si una receta está suficientemente bien explicada, podría permitir preparar un plato a alguien que no sepa nada de cocina.</p>
-<p><strong>b) Método de multiplicar</strong></p>
-<p>El método para multiplicar números a mano que aprendimos en el colegio es un algoritmo. Dado cualquier par de números enteros, si seguimos paso a paso el procedimiento siempre obtendremos el producto:</p>
-<p>La entrada del algoritmo de multiplicación son los dos factores. El proceso es la secuencia de pasos en que los dígitos van siendo multiplicados las reservas van siendo sumadas, y los productos intermedios son finalmente sumados. La salida del algoritmo es el producto obtenido.</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="componentes-de-un-algoritmo">Componentes de un algoritmo<a class="anchor-link" href="#componentes-de-un-algoritmo">&#182;</a></h3><p>Conceptualmente, un algoritmo tiene tres componentes:</p>
+<h1 id="dplyr">Dplyr<a class="anchor-link" href="#dplyr">&#182;</a></h1><h2 id="introduccion">Introducci&#243;n<a class="anchor-link" href="#introduccion">&#182;</a></h2><p><img src="https://raw.githubusercontent.com/tidyverse/dplyr/main/man/figures/logo.png" width = "200"></p>
+<p>La librería <a href="https://github.com/tidyverse/dplyr">dplyr</a> en R es una herramienta poderosa para realizar operaciones de manipulación y transformación de datos de manera eficiente. Fue desarrollada por Hadley Wickham y se basa en una gramática coherente y fácil de usar para trabajar con datos en R. Dplyr se enfoca en proporcionar un conjunto de funciones optimizadas para realizar operaciones comunes de limpieza, filtrado, transformación y resumen de datos.</p>
+<p>Las principales características y beneficios de dplyr son:</p>
 <ul>
-<li><strong>entrada</strong>: son los datos sobre los que el algoritmo opera;</li>
-<li><strong>proceso</strong>: son los pasos que hay que seguir, utilizando la entrada;</li>
-<li><strong>salida</strong>: es el resultado que entrega el algoritmo.</li>
+<li><p><strong>Sintaxis intuitiva</strong>: Dplyr utiliza una sintaxis clara y legible que facilita la comprensión y escritura de código. Esto permite a los usuarios expresar fácilmente las operaciones que desean realizar sobre los datos.</p>
+</li>
+<li><p><strong>Rendimiento eficiente</strong>: Dplyr ha sido diseñado para ofrecer un rendimiento óptimo, especialmente al trabajar con grandes conjuntos de datos. Utiliza técnicas de optimización y aprovecha las funciones de bajo nivel en R para mejorar la velocidad de procesamiento.</p>
+</li>
+<li><p><strong>Operaciones verbales</strong>: Las funciones de dplyr están diseñadas con nombres verbales intuitivos que reflejan las acciones que realizan. Esto hace que el código sea más legible y facilita la comprensión de las operaciones realizadas.</p>
+</li>
+<li><p><strong>Manipulación de datos</strong>: Dplyr proporciona funciones para seleccionar columnas específicas (select), filtrar filas basadas en condiciones lógicas (filter), agregar nuevas columnas o transformar columnas existentes (mutate) y ordenar los datos según una o varias columnas (arrange).</p>
+</li>
+<li><p><strong>Operaciones de agregación</strong>: Dplyr permite realizar operaciones de agregación por grupos utilizando las funciones group_by() y summarize(). Esto permite calcular estadísticas resumidas, como la media, suma, conteo, etc., para diferentes grupos de datos.</p>
+</li>
+<li><p><strong>Combinación de datos</strong>: Dplyr ofrece funciones para combinar diferentes conjuntos de datos basándose en columnas comunes utilizando las funciones join(). Esto permite realizar uniones internas, externas, izquierdas y derechas entre los conjuntos de datos.</p>
+</li>
 </ul>
-<p>El proceso es una secuencia de sentencias, que debe ser realizada en orden. El proceso también puede tener ciclos (grupos de sentencias que son ejecutadas varias veces) y condicionales (grupos de sentencias que sólo son ejecutadas bajo ciertas condiciones).</p>
-<h3 id="como-describir-un-algoritmo">C&#243;mo describir un algoritmo<a class="anchor-link" href="#como-describir-un-algoritmo">&#182;</a></h3><p>Consideremos un ejemplo sencillo: un algoritmo para resolver ecuaciones cuadráticas.</p>
-<p>Una ecuación cuadrática es una ecuación de la forma $ax^2+bx+c=0$, donde $a, b$ y $c$ son datos dados, con $a\neq0$, y $x$ es la incógnita cuyo valor que se desea determinar.</p>
-<p>Por ejemplo, $2x^2−5x+2=0$ es una ecuación cuadrática con $a=2$, $b=−5$ y $c=2$. Sus soluciones son $x_1=1/2$ y $x_2=2$, como se puede comprobar fácilmente al reemplazar estos valores en la ecuación. El problema es cómo obtener estos valores en primer lugar.</p>
-<p>El problema computacional de resolver una ecuación cuadrática puede ser planteado así:</p>
-<blockquote><p>Dados $a, b$ y $c$, entontrar los valores reales de $x$ que satisfacen $ax^2+bx+c=0$.</p>
-</blockquote>
-<p>La entrada del algoritmo, pues, son los valores $a, b$ y $c$, y la salida son las raíces reales $x$ (que pueden ser cero, una o dos) de la ecuación. En un programa computacional, los valores de $a, b$ y $c$ deberían ser ingresados usando el teclado, y las soluciones $x$ deberían ser mostradas a continuación en la pantalla.</p>
-<p>Al estudiar álgebra aprendemos un algoritmo para resolver este problema. Es lo suficientemente detallado para que pueda usarlo cualquier persona, incluso sin saber qué es una ecuación cuadrática, o para que lo pueda hacer un computador. A continuación veremos algunas maneras de describir el procedimiento.</p>
-<p><strong>Lenguaje natural</strong></p>
-<p>Durante el proceso mental de diseñar un algoritmo, es común pensar y describir los pasos en la misma manera en que hablamos a diario. Por ejemplo:</p>
-<blockquote><p>Teniendo los valores de $a, b$ y $c$, calcular el discriminante $D=b^2−4ac$. Si es discriminante es negativo, entonces la ecuación no tiene soluciones reales. Si es discriminante es igual a cero, entonces la ecuación tiene una única solución real, que es $x=−b/2a$. Si el discriminante es positivo, entonces la ecuación tiene dos soluciones reales, que son $x_1=(−b−\sqrt{D})/2a$ y $x_2=(−b+\sqrt{D})/2a$.</p>
-</blockquote>
-<p>Esta manera de expresar un algoritmo no es ideal, ya que el lenguaje natural es:</p>
-<ul>
-<li><strong>impreciso</strong>: puede tener ambigüedades;</li>
-<li><strong>no universal</strong>: personas distintas describirán el proceso de maneras distintas; y</li>
-<li><strong>no estructurado</strong>: la descripción no está expresada en función de componentes simples.</li>
-</ul>
-<p>Aún así, es posible identificar los pasos del algoritmo. Por ejemplo, hay que evaluar la expresión $b^2−4ac$, y ponerle el nombre $D$ a su resultado. Esto se llama asignación, y es un tipo de instrucción que aparece en casi todos los algoritmos. Después de eso, el algoritmo puede usar el nombre $D$ para referirse al valor calculado.</p>
-<p><strong>Diagrama de flujo</strong>
-Un diagrama de flujo es una representación gráfica de un algoritmo. Los pasos son representados por varios tipos de bloques, y el flujo de ejecución es indicado por flechas que conectan los bloques:</p>
-<p><img src="https://raw.githubusercontent.com/fralfaro/python_intro/main/docs/images/flujo.png" alt="" width="360" height="360" align="center"/></p>
 
 </div>
 </div>
@@ -1545,71 +1467,12 @@ Un diagrama de flujo es una representación gráfica de un algoritmo. Los pasos 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>El inicio y el final del algoritmo son representados con bloques circulares. El algoritmo siempre debe ser capaz llegar desde uno hasta el otro, sin importar por qué camino lo hace. Un algoritmo no puede «quedarse pegado» en la mitad.</p>
-<p>La entrada y la salida de datos son representadas con romboides, que en la figura de arriba están pintados de verde.</p>
-<p>Los diamantes representan condiciones en las que el algoritmo sigue uno de dos caminos. que están etiquetados con sí o no, dependiendo si la condición es verdadera o falsa.</p>
-<p>También puede haber ciclos, representados por flechas que regresan a bloques anteriores. En este ejemplo, no hay ciclos.</p>
-<p>Otras sentencias van dentro de rectángulos, que en la figura están pintados de azul. En este ejemplo, las sentencias son asignaciones, representadas en la forma <code>nombre = valor</code>.</p>
-<p>Los diagramas de flujo no son usados en la práctica para programar, pero son útiles para ilustrar cómo funcionan algoritmos sencillos.</p>
-<p><strong>Pseudocódigo</strong></p>
-<p>El pseudocódigo es una descripción estructurada de un algoritmo basada en ciertas convenciones notacionales. Si bien es muy parecido al código que finalmente se escribirá en el computador, el pseudocódigo está pensado para ser leído por humanos.</p>
-<p>Una manera de escribir el algoritmo para la ecuación cuadrática en pseudocódigo es la siguiente:</p>
+<h2 id="ejemplo">Ejemplo<a class="anchor-link" href="#ejemplo">&#182;</a></h2><p>Mostraremos unejemplo completo de cómo utilizar <code>dplyr</code> con el conjunto de datos "<strong>mtcars</strong>" incorporado en R:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Cargar el paquete dplyr</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>
 
-<pre><code>terminal
-leer a
-leer b
-leer c
-
-discriminante = b² - 4ac
-
-si discriminante &lt; 0:
-    escribir 'La ecuación no tiene soluciones reales'
-
-o si no, si discriminante = 0:
-    x = -b / 2a
-    escribir 'La solución única es', x
-
-o si no:
-    x1 = (-b - √discriminante) / 2a
-    x2 = (-b + √discriminante) / 2a
-    escribir 'Las dos soluciones reales son:'
-    escribir x1
-    escribir x2</code></pre>
-<p>Las líneas que comienzan con <code>leer</code> y <code>escribir</code> denotan, respectivamente, la entrada y la salida del programa. Los diferentes casos son representados usando sentencias <code>si</code> y o <code>si no</code>. Las asignaciones siguen la misma notación que en el caso de los diagramas de flujo.</p>
-<p>La notación de pseudocódigo es bien liberal. Uno puede mezclar notación de matemáticas con frases en español, siempre que quede absolutamente claro para el lector qué representa cada una de las líneas del algoritmo.</p>
-<p><strong>Código</strong></p>
-<p>El producto final de la programación siempre debe ser código que pueda ser ejecutado en el computador. Esto requiere describir los algoritmos en un lenguaje de programación. Los lenguajes de programación definen un conjunto limitado de conceptos básicos, en función de los cuales uno puede expresar cualquier algoritmo.</p>
-<p>En esta asignatura, usaremos el lenguaje de programación <a href="https://www.python.org/">Python</a> para escribir nuestros programas.</p>
-<p>El código en Python para resolver la ecuación cuadrática es el siguiente:</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">raw_input</span><span class="p">(</span><span class="s1">&#39;Ingrese a: &#39;</span><span class="p">))</span>
-<span class="n">b</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">raw_input</span><span class="p">(</span><span class="s1">&#39;Ingrese b: &#39;</span><span class="p">))</span>
-<span class="n">c</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">raw_input</span><span class="p">(</span><span class="s1">&#39;Ingrese c: &#39;</span><span class="p">))</span>
-
-<span class="n">discriminante</span> <span class="o">=</span> <span class="n">b</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">a</span> <span class="o">*</span> <span class="n">c</span>
-<span class="k">if</span> <span class="n">discriminante</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="nb">print</span> <span class="s1">&#39;La ecuacion no tiene soluciones reales&#39;</span>
-<span class="k">elif</span> <span class="n">discriminante</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="n">b</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">a</span><span class="p">)</span>
-    <span class="nb">print</span> <span class="s1">&#39;La solucion unica es x =&#39;</span><span class="p">,</span> <span class="n">x</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="n">x1</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="n">b</span> <span class="o">-</span> <span class="p">(</span><span class="n">discriminante</span> <span class="o">**</span> <span class="mf">0.5</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">a</span><span class="p">)</span>
-    <span class="n">x2</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="n">b</span> <span class="o">+</span> <span class="p">(</span><span class="n">discriminante</span> <span class="o">**</span> <span class="mf">0.5</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">a</span><span class="p">)</span>
-    <span class="nb">print</span> <span class="s1">&#39;Las dos soluciones reales son:&#39;</span>
-    <span class="nb">print</span> <span class="s1">&#39;x1 =&#39;</span><span class="p">,</span> <span class="n">x1</span>
-    <span class="nb">print</span> <span class="s1">&#39;x2 =&#39;</span><span class="p">,</span> <span class="n">x2</span>
-
-<span class="n">raw_input</span><span class="p">()</span>
+<span class="c1"># Ver una vista previa del conjunto de datos mtcars</span>
+<span class="nf">head</span><span class="p">(</span><span class="n">mtcars</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1622,21 +1485,33 @@ o si no:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>A partir de ahora, usted aprenderá a entender, escribir y ejecutar códigos como éste.</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="referencias">Referencias<a class="anchor-link" href="#referencias">&#182;</a></h2><ul>
-<li><a href="http://progra.usm.cl/apunte/materia/index.html">Programación - USM</a></li>
-</ul>
+<p><strong>Seleccionar columnas específicas</strong>:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Seleccionar las columnas &quot;mpg&quot;, &quot;cyl&quot; y &quot;gear&quot;</span>
+<span class="n">mtcars_select</span> <span class="o">&lt;-</span> <span class="nf">select</span><span class="p">(</span><span class="n">mtcars</span><span class="p">,</span> <span class="n">mpg</span><span class="p">,</span> <span class="n">cyl</span><span class="p">,</span> <span class="n">gear</span><span class="p">)</span>
+<span class="nf">head</span><span class="p">(</span><span class="n">mtcars_select</span><span class="p">)</span>
+</pre></div>
+<p><strong>Filtrar filas basadas en una condición</strong>:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Filtrar las filas donde el número de cilindros (cyl) es igual a 6</span>
+<span class="n">mtcars_filter</span> <span class="o">&lt;-</span> <span class="nf">filter</span><span class="p">(</span><span class="n">mtcars</span><span class="p">,</span> <span class="n">cyl</span> <span class="o">==</span> <span class="m">6</span><span class="p">)</span>
+<span class="nf">head</span><span class="p">(</span><span class="n">mtcars_filter</span><span class="p">)</span>
+<span class="nf">head</span><span class="p">(</span><span class="n">mtcars</span><span class="p">)</span>
+</pre></div>
+<p><strong>Agregar una nueva columna calculada</strong>:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Agregar una nueva columna &quot;km_l&quot; que calcule el consumo de combustible en km por litro</span>
+<span class="n">mtcars_mutate</span> <span class="o">&lt;-</span> <span class="nf">mutate</span><span class="p">(</span><span class="n">mtcars</span><span class="p">,</span> <span class="n">km_l</span> <span class="o">=</span> <span class="m">1.60934</span> <span class="o">*</span> <span class="n">mpg</span> <span class="o">/</span> <span class="m">3.78541</span><span class="p">)</span>
+<span class="nf">head</span><span class="p">(</span><span class="n">mtcars_mutate</span><span class="p">)</span>
+</pre></div>
+<p><strong>Ordenar el conjunto de datos por una columna específica</strong>:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Ordenar las filas por el número de cilindros (cyl) en orden descendente</span>
+<span class="n">mtcars_arrange</span> <span class="o">&lt;-</span> <span class="nf">arrange</span><span class="p">(</span><span class="n">mtcars</span><span class="p">,</span> <span class="nf">desc</span><span class="p">(</span><span class="n">cyl</span><span class="p">))</span>
+<span class="nf">head</span><span class="p">(</span><span class="n">mtcars_arrange</span><span class="p">)</span>
+</pre></div>
+<p><strong>Realizar una operación de agregación por grupo</strong>:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Agrupar el conjunto de datos por el número de cilindros (cyl) y calcular la media del consumo de combustible (mpg) y la potencia bruta (hp)</span>
+<span class="n">mtcars_group</span> <span class="o">&lt;-</span> <span class="nf">group_by</span><span class="p">(</span><span class="n">mtcars</span><span class="p">,</span> <span class="n">cyl</span><span class="p">)</span>
+<span class="n">mtcars_summary</span> <span class="o">&lt;-</span> <span class="nf">summarize</span><span class="p">(</span><span class="n">mtcars_group</span><span class="p">,</span> <span class="n">media_mpg</span> <span class="o">=</span> <span class="nf">mean</span><span class="p">(</span><span class="n">mpg</span><span class="p">),</span> <span class="n">media_hp</span> <span class="o">=</span> <span class="nf">mean</span><span class="p">(</span><span class="n">hp</span><span class="p">))</span>
+<span class="n">mtcars_summary</span>
+</pre></div>
 
 </div>
 </div>
@@ -1663,7 +1538,7 @@ o si no:
     <nav class="md-footer__inner md-grid" aria-label="Pie">
       
         
-        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Anterior: Home" rel="prev">
+        <a href="../basic/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Nomenclatura" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1672,20 +1547,20 @@ o si no:
               <span class="md-footer__direction">
                 Anterior
               </span>
-              Home
+              Nomenclatura
             </div>
           </div>
         </a>
       
       
         
-        <a href="../introduccion/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Motivación" rel="next">
+        <a href="../ggplot2/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Ggplot2" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Siguiente
               </span>
-              Motivación
+              Ggplot2
             </div>
           </div>
           <div class="md-footer__button md-icon">

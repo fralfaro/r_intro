@@ -12,14 +12,14 @@
         <meta name="author" content="Francisco Alfaro">
       
       
-        <link rel="canonical" href="https://github.com/fralfaro/r_intro/introduccion/">
+        <link rel="canonical" href="https://github.com/fralfaro/r_intro/ggplot2/">
       
       <link rel="icon" href="../images/logo_r.bmp">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Motivación - Home</title>
+        <title>Ggplot2 - Home</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#motivacion" class="md-skip">
+        <a href="#ggplot2" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Motivación
+              Ggplot2
             
           </span>
         </div>
@@ -249,8 +249,38 @@
   
   
     <li class="md-nav__item">
-      <a href="../intro_progra/" class="md-nav__link">
-        Programación
+      <a href="../intro/" class="md-nav__link">
+        Introducción
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic/" class="md-nav__link">
+        Nomenclatura
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dplyr/" class="md-nav__link">
+        Dplyr
       </a>
     </li>
   
@@ -274,12 +304,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Motivación
+          Ggplot2
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Motivación
+        Ggplot2
       </a>
       
         
@@ -298,29 +328,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#popularidad" class="md-nav__link">
-    Popularidad
+  <a href="#introduccion" class="md-nav__link">
+    Introducción
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#librerias-y-frameworks" class="md-nav__link">
-    Librerías y frameworks
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#performance" class="md-nav__link">
-    Performance
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#referencia" class="md-nav__link">
-    Referencia
+  <a href="#ejemplo" class="md-nav__link">
+    Ejemplo
   </a>
   
 </li>
@@ -329,21 +345,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../basico/" class="md-nav__link">
-        Nomenclatura
-      </a>
     </li>
   
 
@@ -375,29 +376,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#popularidad" class="md-nav__link">
-    Popularidad
+  <a href="#introduccion" class="md-nav__link">
+    Introducción
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#librerias-y-frameworks" class="md-nav__link">
-    Librerías y frameworks
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#performance" class="md-nav__link">
-    Performance
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#referencia" class="md-nav__link">
-    Referencia
+  <a href="#ejemplo" class="md-nav__link">
+    Ejemplo
   </a>
   
 </li>
@@ -1452,14 +1439,21 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="motivacion">Motivaci&#243;n<a class="anchor-link" href="#motivacion">&#182;</a></h1><p><a href="https://www.python.org/">Python</a> es un lenguaje de programación interpretado de alto nivel, diseñado para ser fácil de leer y escribir. Fue creado a finales de la década de 1980 por <a href="https://en.wikipedia.org/wiki/Guido_van_Rossum">Guido van Rossum</a> y se ha convertido en uno de los lenguajes de programación más populares en la actualidad. Python es un lenguaje versátil que se puede utilizar para una variedad de tareas, desde el desarrollo web y la ciencia de datos hasta la automatización de tareas y la programación de sistemas.</p>
-<p>Algunas características de Python:</p>
+<h1 id="ggplot2">Ggplot2<a class="anchor-link" href="#ggplot2">&#182;</a></h1><h2 id="introduccion">Introducci&#243;n<a class="anchor-link" href="#introduccion">&#182;</a></h2><p><img src="https://ggplot2.tidyverse.org/logo.png" width = "200"></p>
+<p>La librería <a href="https://github.com/tidyverse/ggplot2">ggplot2</a> en R es una herramienta poderosa para la visualización de datos. Fue desarrollada por Hadley Wickham y se basa en la gramática de gráficos (Grammar of Graphics) para crear visualizaciones claras y atractivas.</p>
+<p>Las principales características y beneficios de ggplot2 son:</p>
 <ul>
-<li><p><strong>sintaxis clara y concisa</strong>: fácil de aprender y de entender para los programadores novatos. Además, cuenta con una amplia biblioteca estándar que proporciona una gran cantidad de herramientas y módulos para realizar tareas comunes.</p>
+<li><p><strong>Sintaxis declarativa</strong>: ggplot2 utiliza una sintaxis declarativa que permite a los usuarios especificar cómo quieren que se vea la visualización en lugar de cómo se debe crear. Esto facilita la construcción de gráficos complejos y personalizados.</p>
 </li>
-<li><p><strong>lenguaje interpretado</strong>: el código se ejecuta línea por línea, en lugar de ser compilado de antemano. Esto lo hace muy flexible y adecuado para prototipos rápidos y experimentación.</p>
+<li><p><strong>Capacidad de capas</strong>: ggplot2 se basa en la idea de añadir capas de información a un gráfico. Esto significa que puedes agregar capas para representar puntos, líneas, áreas, barras y más, lo que te brinda un alto grado de flexibilidad para crear visualizaciones complejas y detalladas.</p>
 </li>
-<li><p><strong>código abierto</strong>: el código fuente está disponible públicamente y se puede modificar y distribuir libremente. Hay una gran comunidad de desarrolladores de Python que contribuyen con módulos y herramientas útiles, y que brindan soporte y ayuda a otros usuarios.</p>
+<li><p><strong>Gráficos estéticamente agradables</strong>: ggplot2 está diseñado para generar gráficos atractivos visualmente por defecto. Utiliza esquemas de color agradables, proporciona opciones de estilo y formato, y ofrece una amplia gama de elementos gráficos para personalizar y mejorar la apariencia del gráfico.</p>
+</li>
+<li><p><strong>Escalas y transformaciones</strong>: ggplot2 proporciona una amplia gama de escalas y transformaciones para ajustar la visualización a tus necesidades. Puedes cambiar las escalas de los ejes, ajustar los límites, aplicar transformaciones logarítmicas y mucho más.</p>
+</li>
+<li><p><strong>Facetas</strong>: Con ggplot2, puedes crear gráficos facetados, lo que significa que puedes dividir tus datos en grupos y mostrar visualizaciones separadas para cada grupo en una sola imagen. Esto es útil para comparar grupos o realizar análisis comparativos.</p>
+</li>
+<li><p><strong>Personalización completa</strong>: ggplot2 ofrece una gran cantidad de opciones de personalización para adaptar la visualización a tus preferencias. Puedes ajustar el tamaño y estilo de las etiquetas, agregar títulos, leyendas y anotaciones, cambiar los ejes y mucho más.</p>
 </li>
 </ul>
 
@@ -1473,10 +1467,13 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="popularidad">Popularidad<a class="anchor-link" href="#popularidad">&#182;</a></h2><p>Python es uno de los lenguajes de programación más populares y ampliamente utilizados en la actualidad. Según los índices de popularidad de lenguajes de programación, Python ha estado en constante aumento en popularidad en los últimos años.</p>
-<p>El índice <a href="https://www.tiobe.com/tiobe-index/">TIOBE</a>, que mide la popularidad de los lenguajes de programación según la frecuencia con la que se buscan en los motores de búsqueda, ha situado a Python entre los tres lenguajes de programación más populares en los últimos años, después de Java y C.</p>
-<p>Además, en la encuesta anual <a href="https://insights.stackoverflow.com/survey/2021">Stack Overflow Developer Survey 2021</a>, Python fue el tercer lenguaje de programación más popular, después de JavaScript y HTML/CSS. También se ha convertido en uno de los lenguajes más populares para la ciencia de datos y el aprendizaje automático.</p>
-<p><img src="https://raw.githubusercontent.com/fralfaro/python_intro/main/docs/images/survey_2021.png" alt="" align="center" /></p>
+<h2 id="ejemplo">Ejemplo<a class="anchor-link" href="#ejemplo">&#182;</a></h2><p>Mostraremos unejemplo completo de cómo utilizar <code>ggplot2</code> con el conjunto de datos "<strong>mtcars</strong>" incorporado en R:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Cargar el paquete ggplot2</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+
+<span class="c1"># Ver una vista previa del conjunto de datos mtcars</span>
+<span class="nf">head</span><span class="p">(</span><span class="n">mtcars</span><span class="p">)</span>
+</pre></div>
 
 </div>
 </div>
@@ -1488,103 +1485,43 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>¿Es buena la popularidad de Python?</strong></p>
-<p>Sí, la popularidad de Python es una señal de su relevancia en el mundo de la programación y puede tener varias ventajas para los usuarios y la comunidad en general.</p>
-<p>En primer lugar, una mayor popularidad significa que hay una amplia comunidad de desarrolladores y usuarios de Python en todo el mundo, lo que hace que sea más fácil encontrar recursos, soporte y ayuda en línea. Además, una gran comunidad de usuarios también implica que hay una gran cantidad de bibliotecas y módulos disponibles, lo que permite a los usuarios aprovechar el código existente y acelerar el desarrollo.</p>
-<p>En segundo lugar, la popularidad de Python lo convierte en una habilidad valiosa en el mercado laboral, con una amplia gama de oportunidades de carrera en diferentes sectores, incluyendo la ciencia de datos, la inteligencia artificial, el desarrollo web, la automatización y la programación de sistemas.</p>
-<p>Por último, la popularidad de Python también puede significar que hay una gran inversión en su desarrollo y mejora continua, lo que resulta en una mayor calidad y eficiencia del lenguaje de programación.</p>
-<p>En general, la popularidad de Python es una buena señal y es una de las razones por las que se ha convertido en un lenguaje de programación tan popular y utilizado en todo el mundo.</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="librerias-y-frameworks">Librer&#237;as y frameworks<a class="anchor-link" href="#librerias-y-frameworks">&#182;</a></h2><p><img src="https://raw.githubusercontent.com/fralfaro/python_intro/main/docs/images/librerias.png" alt="" align="center" /></p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Una gran ventaja de Python es la amplia selección de <strong>librerías</strong> y <strong>frameworks</strong> que ofrece.</p>
-<p>Hay librerías para distintos tópicos:</p>
-<ul>
-<li>Manipulación de datos </li>
-<li>Visualización de datos </li>
-<li>Aprendizaje automático</li>
-<li>Ciencia de los datos</li>
-<li>Procesamiento natural del lenguaje</li>
-<li>Big Data</li>
-</ul>
-<p>Lo mismo es cierto para los <code>frameworks</code>, que ayudan a despegar su proyecto y le ahorran tiempo y esfuerzo. Hay una variedad de marcos para elegir, dependiendo de sus necesidades, por ejemplo, para el desarrollo web tenemos:</p>
-<ul>
-<li><p><strong>Django</strong>: Es un framework de Python que se utiliza para el desarrollo de aplicaciones web. Ofrece una arquitectura de modelo-vista-controlador (MVC) y herramientas para la administración de bases de datos, la autenticación y la seguridad.</p>
-</li>
-<li><p><strong>Flask</strong>: Es un framework de Python que se utiliza para el desarrollo de aplicaciones web de menor escala y más simples. Ofrece una amplia gama de herramientas y extensiones para la creación de aplicaciones web.</p>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="performance">Performance<a class="anchor-link" href="#performance">&#182;</a></h2><p><img src="https://raw.githubusercontent.com/fralfaro/python_intro/main/docs/images/tuning-performance.jpg" alt="" align="center" /></p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Python es un lenguaje de programación interpretado de alto nivel, lo que significa que su rendimiento puede ser más lento que otros lenguajes de programación de menor nivel, como C o C++. Sin embargo, Python ofrece varias técnicas y herramientas para mejorar el rendimiento y la eficiencia de sus programas. Aquí hay algunas de ellas:</p>
-<ul>
-<li><p><strong>Compilación JIT</strong>: Python ofrece la opción de utilizar un compilador Just-In-Time (JIT), como PyPy, que puede mejorar significativamente el rendimiento de los programas al compilar el código en tiempo de ejecución.</p>
-</li>
-<li><p><strong>CPython</strong>: Python también se puede ejecutar en una implementación de C llamada CPython, lo que puede mejorar el rendimiento de algunos programas.</p>
-</li>
-<li><p><strong>Uso de bibliotecas nativas</strong>: Python ofrece la capacidad de usar bibliotecas nativas, como NumPy, que están escritas en lenguajes de bajo nivel como C y Fortran para realizar operaciones numéricas de manera más eficiente.</p>
-</li>
-<li><p><strong>Uso de estructuras de datos eficientes</strong>: Python ofrece varias estructuras de datos, como las listas y los diccionarios, que se pueden usar de manera eficiente para mejorar el rendimiento de los programas.</p>
-</li>
-<li><p><strong>Uso de algoritmos eficientes</strong>: El uso de algoritmos eficientes también puede mejorar significativamente el rendimiento de los programas en Python.</p>
-</li>
-</ul>
-<p>En general, Python puede ofrecer un buen rendimiento en comparación con otros lenguajes de programación interpretados, y hay varias técnicas y herramientas disponibles para mejorar aún más su rendimiento y eficiencia. Sin embargo, es importante recordar que el rendimiento dependerá en gran medida del uso que se le dé al lenguaje y de cómo se escriban los programas.</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="referencia">Referencia<a class="anchor-link" href="#referencia">&#182;</a></h2><ol>
-<li><a href="https://docs.python.org/es/3.8/tutorial/index.html">Tutorial de Python 3.8 documentation</a></li>
-</ol>
+<p><strong>Gráfico de dispersión simple</strong>:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Gráfico de dispersión entre el consumo de combustible (mpg) y la potencia bruta (hp)</span>
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">mtcars</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">mpg</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">hp</span><span class="p">))</span> <span class="o">+</span>
+  <span class="nf">geom_point</span><span class="p">()</span> <span class="o">+</span>
+  <span class="nf">labs</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s">&quot;Consumo de Combustible (mpg)&quot;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s">&quot;Potencia Bruta (hp)&quot;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s">&quot;Relación entre Consumo de Combustible y Potencia Bruta&quot;</span><span class="p">)</span>
+</pre></div>
+<p><strong>Gráfico de barras simple</strong>:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Gráfico de barras para mostrar el número de cilindros (cyl) en el conjunto de datos</span>
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">mtcars</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="nf">factor</span><span class="p">(</span><span class="n">cyl</span><span class="p">)))</span> <span class="o">+</span>
+  <span class="nf">geom_bar</span><span class="p">(</span><span class="n">fill</span> <span class="o">=</span> <span class="s">&quot;steelblue&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">labs</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s">&quot;Número de Cilindros&quot;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s">&quot;Frecuencia&quot;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s">&quot;Distribución del Número de Cilindros&quot;</span><span class="p">)</span>
+</pre></div>
+<p><strong>Gráfico de líneas simple</strong>:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Gráfico de líneas para mostrar la evolución del consumo de combustible (mpg) a medida que aumenta la potencia bruta (hp)</span>
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">mtcars</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">hp</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">mpg</span><span class="p">))</span> <span class="o">+</span>
+  <span class="nf">geom_line</span><span class="p">()</span> <span class="o">+</span>
+  <span class="nf">labs</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s">&quot;Potencia Bruta (hp)&quot;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s">&quot;Consumo de Combustible (mpg)&quot;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s">&quot;Evolución del Consumo de Combustible por Potencia Bruta&quot;</span><span class="p">)</span>
+</pre></div>
+<p><strong>Gráfico de cajas y bigotes</strong>:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Gráfico de cajas y bigotes para mostrar la distribución del consumo de combustible (mpg) según el número de cilindros (cyl)</span>
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">mtcars</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="nf">factor</span><span class="p">(</span><span class="n">cyl</span><span class="p">),</span> <span class="n">y</span> <span class="o">=</span> <span class="n">mpg</span><span class="p">))</span> <span class="o">+</span>
+  <span class="nf">geom_boxplot</span><span class="p">(</span><span class="n">fill</span> <span class="o">=</span> <span class="s">&quot;lightblue&quot;</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s">&quot;steelblue&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">labs</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s">&quot;Número de Cilindros&quot;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s">&quot;Consumo de Combustible (mpg)&quot;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s">&quot;Distribución del Consumo de Combustible por Número de Cilindros&quot;</span><span class="p">)</span>
+</pre></div>
+<p><strong>Gráfico de dispersión múltiple con facet_wrap()</strong>:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Gráfico de dispersión entre el consumo de combustible (mpg) y la potencia bruta (hp), dividido por el número de cilindros (cyl)</span>
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">mtcars</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">mpg</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">hp</span><span class="p">))</span> <span class="o">+</span>
+  <span class="nf">geom_point</span><span class="p">()</span> <span class="o">+</span>
+  <span class="nf">facet_wrap</span><span class="p">(</span><span class="o">~</span> <span class="n">cyl</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">labs</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s">&quot;Consumo de Combustible (mpg)&quot;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s">&quot;Potencia Bruta (hp)&quot;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s">&quot;Relación entre Consumo de Combustible y Potencia Bruta por Número de Cilindros&quot;</span><span class="p">)</span>
+</pre></div>
+<p><strong>Gráfico de barras con group_by() y stat_summary()</strong>:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Gráfico de barras para mostrar el consumo de combustible promedio (mpg) por número de cilindros (cyl)</span>
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">mtcars</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="nf">factor</span><span class="p">(</span><span class="n">cyl</span><span class="p">),</span> <span class="n">y</span> <span class="o">=</span> <span class="n">mpg</span><span class="p">))</span> <span class="o">+</span>
+  <span class="nf">stat_summary</span><span class="p">(</span><span class="n">fun</span> <span class="o">=</span> <span class="s">&quot;mean&quot;</span><span class="p">,</span> <span class="n">geom</span> <span class="o">=</span> <span class="s">&quot;bar&quot;</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="s">&quot;steelblue&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">labs</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s">&quot;Número de Cilindros&quot;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s">&quot;Consumo de Combustible Promedio (mpg)&quot;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s">&quot;Consumo de Combustible Promedio por Número de Cilindros&quot;</span><span class="p">)</span>
+</pre></div>
 
 </div>
 </div>
@@ -1611,7 +1548,7 @@ Licensed under the Apache License, Version 2.0.
     <nav class="md-footer__inner md-grid" aria-label="Pie">
       
         
-        <a href="../intro_progra/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Programación" rel="prev">
+        <a href="../dplyr/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Dplyr" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1620,26 +1557,11 @@ Licensed under the Apache License, Version 2.0.
               <span class="md-footer__direction">
                 Anterior
               </span>
-              Programación
+              Dplyr
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="../basico/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Nomenclatura" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Siguiente
-              </span>
-              Nomenclatura
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
       
     </nav>
   

@@ -11,17 +11,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/r_intro/basico/</loc>
+         <loc>https://github.com/fralfaro/r_intro/basic/</loc>
          <lastmod>2023-07-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/r_intro/intro_progra/</loc>
+         <loc>https://github.com/fralfaro/r_intro/dplyr/</loc>
          <lastmod>2023-07-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/r_intro/introduccion/</loc>
+         <loc>https://github.com/fralfaro/r_intro/ggplot2/</loc>
+         <lastmod>2023-07-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/r_intro/intro/</loc>
          <lastmod>2023-07-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
