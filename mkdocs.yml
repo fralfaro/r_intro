@@ -85,7 +85,6 @@ plugins:
       kernel_name: python3
   - search
 
-
 # TOC
 nav:
     - Home: index.md
