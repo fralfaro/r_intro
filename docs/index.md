@@ -13,6 +13,6 @@ https://github.com/fralfaro/r_intro
 ## Contenidos temáticos
 
 * Introducción a R
-* Nomenclarura
+* Nomenclatura
 * Introducción dplyr
 * Introducción ggplot2
