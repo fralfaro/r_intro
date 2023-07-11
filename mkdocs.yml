@@ -88,6 +88,8 @@ plugins:
 # TOC
 nav:
     - Home: index.md
-    - Programación: intro_progra.ipynb
-    - Motivación: introduccion.ipynb
-    - Nomenclatura: basico.ipynb
+    - intro.ipynb
+    - basic.ipynb
+    - dplyr.ipynb
+    - ggplot2.ipynb
+
